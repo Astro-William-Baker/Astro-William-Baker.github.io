@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Main Profile Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #A7C7E7;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>William M. Baker </h1>
+  <p>Observational Astrophysicist Researching Galaxy Evolution</p>
+</div>
+
+<div class="navbar">
+  <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-0215-1104&sort=date%20desc%2C%20bibcode%20desc&p_=0">Publications</a>
+  <a href="#">CV</a>
+  <a href="#">Research Interests</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="Profile_picture.jpeg" style="height:200px;">Image</div>
+    <p>Research Fellow (Postdoctoral) at DARK, Niels Bohr Institute, Copenhagen</p>
+    <p>Previously PhD student/postdoc at University of Cambridge</p>
+    <h3>Research Interests</h3>
+    <p>Quenching, high-z, morphology, metallicities, quiescent galaxies, scaling relations, photometry, spectroscopy</p>
+    <!-- <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div> -->
+  </div>
+  <div class="main">
+    <h2>The abundance and nature of high-redshift quiescent galaxies from JADES spectroscopy and the FLAMINGO simulations</h2>
+    <h5>Baker et al. 2024c, submitted to MNRAS</h5>
+    <a href="arxiv.org/abs/2410.14773">Link to paper</a>
+    <div class="images/postage_stamps_centrals.pdf" style="height:200px;">Image</div>
+    <p>Abstract: We use NIRSpec/MSA spectroscopy and NIRCam imaging to study a sample of 18 massive ( logM∗/M⊙>10 dex), central quiescent galaxies at  2≤z≤5  in the GOODS fields, to investigate their number density, star-formation histories, quenching timescales, and incidence of AGN. The depth of our data reaches  logM∗/M⊙≈9 dex, yet the least-massive central quiescent galaxy found has  logM∗/M⊙>10 dex, suggesting that quenching is regulated by a physical quantity that scales with  M∗ . With spectroscopy as benchmark, we assess the completeness and purity of photometric samples, finding number densities 10 times higher than predicted by galaxy formation models, confirming earlier photometric studies. We compare our number densities to predictions from FLAMINGO, the largest-box full-hydro simulation suite to date. We rule out cosmic variance at the 3- σ  level, providing spectroscopic confirmation that galaxy formation models do not match observations at  z>3 . Using FLAMINGO, we find that the vast majority of quiescent galaxies' stars formed in situ, with these galaxies not having undergone multiple major dry mergers. This is in agreement with the compact observed size of these systems and suggests that major mergers are not a viable channel for quenching most massive galaxies. Several of our observed galaxies are particularly old, with four galaxies displaying 4000-Å breaks; full-spectrum fitting infers formation and quenching redshifts of  z≥8  and  z≥6 . Using all available AGN tracers, we find that 8 massive quiescent galaxies host AGN, including in old systems. This suggests a high duty cycle of AGN and a continued trickle of gas to fuel accretion.</p>
+    <br>
+    <h2>A core in a star-forming disc as evidence of inside-out growth in the early Universe</h2>
+    <h5>Baker et al. 2024b, Nature Astronomy</h5>
+    <a href="https://doi.org/10.1038/s41550-024-02384-8">Link to paper</a>
+    <div class="images/NatAstroFig.pdf" style="height:200px;">Image</div>
+    <p>Abstract: The physical processes that establish the morphological evolution and the structural diversity of galaxies are key unknowns in extragalactic astrophysics. Here we report the finding of the morphologically mature galaxy JADES-GS+53.18343−27.79097, which existed within the first 700 million years of the Universe's history. This star-forming galaxy with a stellar mass of 400 million solar masses consists of three components: a highly compact core with a half-light radius of less than 100 pc, an actively star-forming disc with a radius of about 400 pc and a star-forming clump, all of which show distinctive star-formation histories. The central stellar mass density of this galaxy is within a factor of 2 of the most massive present-day ellipticals, while being globally 1,000 times less massive. The radial profile of the specific star-formation rate is rising towards the outskirts. This evidence suggests a detection of the inside-out growth of a galaxy as a proto-bulge and a star-forming disc in the epoch of reionization.</p>
+    <br>
+    <h2>Different regulation of stellar metallicities between star-forming and quiescent galaxies - insights into galaxy quenching</h2>
+    <h5>Baker et al.2024a, MNRAS</h5>
+    <a href="https://doi.org/10.1093/mnras/stae2059">Link to paper</a>
+    <div class="images/stae2059fig1.jpeg" style="height:200px;">Image</div>
+    <p>Abstract: One of the most important questions in astrophysics is what causes galaxies to stop forming stars. Previous studies have shown a tight link between quiescence and black hole mass. Other studies have revealed that quiescence is also associated with 'starvation', the halting of gas inflows, which results in the remaining gas being used up by star formation and in rapid chemical enrichment. In this work, we find the missing link between these two findings. Using a large sample of galaxies, we uncover the intrinsic dependences of the stellar metallicity on galaxy properties. In the case of star-forming galaxies, stellar metallicity is primarily driven by stellar mass. However, for passive galaxies, the stellar metallicity is primarily driven by the stellar velocity dispersion. The latter is known to be tightly correlated with black hole mass. This result can be seen as connecting previous studies, where the integrated effect of black hole feedback (i.e. black hole mass, traced by the velocity dispersion) prevents gas inflows, starving the galaxy, which is seen by the rapid increase in the stellar metallicity, and leading to the galaxy becoming passive.</p>
+    <br>
+    <h2>Stellar mass, not dynamical mass nor gravitational potential, drives the mass-metallicity relationship</h2>
+    <h5>Baker & Maiolino 2023</h5>
+    <a href="https://doi.org/10.1093/mnras/stad802">Link to paper</a>
+    <div class="images/stad802fig1.jpeg" style="height:200px;">Image</div>
+    <p>Abstract: "The widely known relation between stellar mass and gas metallicity [mass–metallicity relation (MZR)] in galaxies is often
+        ascribed to the higher capability of more massive systems to retain metals against the action of galactic outflows. In this
+        scenario the stellar mass would simply be an indirect proxy of the dynamical mass or of the gravitational potential. We test this
+        scenario by using a sample of more than 1000 star-forming galaxies from the MaNGA (Mapping Nearby Galaxies at Apache
+        Point Observatory) survey for which dynamical masses have been accurately determined. By using three different methods
+        (average dispersion, partial correlation coefficients, and random forest), we unambiguously find that the gas metallicity depends
+        primarily and fundamentally on the stellar mass. Once the dependence on stellar mass is taken into account, there is little or
+        no dependence on either dynamical mass or gravitational potential (and, if anything, the metallicity dependence on the latter
+        quantities is inverted). Our result indicates that the MZR is not caused by the retention of metals in more massive galaxies. The
+        direct, fundamental dependence of metallicity on stellar mass suggests the much simpler scenario in which the MZR is just a
+        consequence of the stellar mass being proportional to the integral of metals production in the galaxy." Baker & Maiolino 2023, MNRAS</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>The metallicity's fundamanetal dependence on both local and global galactic quantities </h2>
+    <h5>Baker et al. 2023b</h5>
+    <a href="https://doi.org/10.1093/mnras/stac3594">Link to paper</a>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <p>We study the scaling relations between gas-phase metallicity, stellar mass surface density (Σ*), star formation rate surface density (ΣSFR), and molecular gas surface density ( ΣH2 ) in local star-forming galaxies on scales of a kpc. 
+      We employ optical integral field spectroscopy from the Mapping Nearby Galaxies at Apache Point Observatory (MaNGA) survey, and ALMA data for a subset of MaNGA galaxies. 
+      We use partial correlation coefficients and Random Forest regression to determine the relative importance of local and global galactic properties in setting the gas-phase metallicity. 
+      We find that the local metallicity depends primarily on Σ* (the resolved mass-metallicity relation, rMZR), and has a secondary anticorrelation with ΣSFR (i.e. a spatially resolved version of the 'Fundamental Metallicity Relation', rFMR). 
+      We find that  ΣH2  is less important than ΣSFR in determining the local metallicity. This result indicates that gas accretion, resulting in local metallicity dilution and local boosting of star formation, is unlikely to be the primary origin of the rFMR. 
+      The local metallicity depends also on the global properties of galaxies. We find a strong dependence on the total stellar mass (M*) and a weaker (inverse) dependence on the total SFR. 
+      The global metallicity scaling relations, therefore, do not simply stem out of their resolved counterparts; global properties and processes, such as the global gravitational potential well, galaxy-scale winds and global redistribution/mixing of metals, likely contribute to the local metallicity, in addition to local production and retention.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>The molecular gas main sequence and Schmidt-Kennicutt relation are fundamental, the star-forming main sequence is a (useful) byproduct</h2>
+    <h5>Baker et al. 2023a</h5>
+    <a href="https://doi.org/10.1093/mnras/stac3413">Link to paper</a>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <p>We investigate the relationship between the star formation rate (SFR), stellar mass (M*), and molecular gas mass ( MH2 ) for local star-forming galaxies.
+       We further investigate these relationships for high-z (z = 1-3) galaxies and for the hosts of a local sample of active galactic nuclei (AGN). 
+       We explore which of these dependencies are intrinsic and which are an indirect byproduct by employing partial correlation coefficients and random forest regression. 
+       We find that for local star-forming galaxies, high-z galaxies, and AGN host galaxies, the Schmidt-Kennicutt (SK) relation (between  MH2  and SFR) and the molecular gas main sequence (MGMS; between  MH2  and M*) are intrinsic primary relations, while the relationship between M* and SFR, i.e. the star-forming main sequence (SFMS), is an indirect byproduct of the former two. 
+       Hence the SFMS is not a fundamental scaling relation for local or high-z galaxies. 
+       We find evidence for both the evolution of the MGMS and SK relation over cosmic time, where, at a given stellar mass, the higher the redshift, the greater the molecular gas mass and the star formation efficiency. 
+       We offer a parametrization of both the MGMS and SK relation's evolution with redshift, showing how they combine to form the observed evolution of the SFMS. 
+       In addition, we find that the local AGN host galaxies follow an AGN-MGMS relation (as well as an AGN-SK relation), where the MGMS is offset to lower  MH2  for a given M* compared to local star-forming galaxies.</p>
+    <h2>The ALMaQUEST survey IX: the nature of the resolved star-forming main sequence</h2>
+    <h5>Baker et al. 2022</h5>
+    <a href="https://doi.org/10.1093/mnras/stab3672">Link to paper</a>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <p>We investigate the nature of the scaling relations between the surface density of star formation rate (ΣSFR), stellar mass (Σ*), and molecular gas mass ( ΣH2 ), aiming at distinguishing between the relations that are primary, i.e. more fundamental, and those which are instead an indirect by-product of the other relations. We use the ALMA-MaNGA QUEnching and STar formation survey and analyse the data by using both partial correlations and random forest regression techniques. We unambiguously find that the strongest intrinsic correlation is between ΣSFR and  ΣH2  (i.e. the resolved Schmidt-Kennicutt relation), followed by the correlation between  ΣH2  and Σ* (resolved molecular gas main sequence, rMGMS). Once these two correlations are taken into account, we find that there is no evidence for any intrinsic correlation between ΣSFR and Σ*, implying that star formation rate (SFR) is entirely driven by the amount of molecular gas, while its dependence on stellar mass (i.e. the resolved star forming main sequence, rSFMS) simply emerges as a consequence of the relationship between molecular gas and stellar mass.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>William M. Baker</h2>
+</div>
+
+</body>
+</html>
