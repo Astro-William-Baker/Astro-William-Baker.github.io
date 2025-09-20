@@ -44,7 +44,6 @@
 
     /* Sidebar */
     .side img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
-    .side h2 { margin-top: 0; }
     .tags span {
       display: inline-block; background: #234a7d; color: white; padding: 4px 8px;
       margin: 3px; border-radius: 12px; font-size: 0.85rem;
@@ -123,22 +122,78 @@
     <div class="main" id="publications">
       <h2>Selected Publications</h2>
 
-      <!-- Example paper card -->
+      <!-- Each paper is a collapsible card -->
       <div class="paper-card">
         <h3>Exploring over 700 massive quiescent galaxies at z = 2–7</h3>
         <p><strong>Baker et al. 2025d</strong> — Submitted to A&A</p>
-        <div class="paper-links">
-          <a href="https://doi.org/10.1093/mnras/staf475">📄 DOI</a>
-        </div>
-        <img src="images/SMFs_mqg.png" alt="Stellar mass function of quiescent galaxies">
-        <details>
-          <summary>Read Abstract</summary>
-          <p>High-redshift (z>2) massive quiescent galaxies are crucial tests... [full abstract here]</p>
-        </details>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/staf475">📄 DOI</a></div>
+        <img src="images/SMFs_mqg.png" alt="SMFs of quiescent galaxies">
+        <details><summary>Read Abstract</summary><p>High-redshift (z>2) massive quiescent galaxies are crucial tests... [full abstract]</p></details>
       </div>
 
-      <!-- Repeat .paper-card for each paper -->
-      <!-- You can paste all your abstracts inside <details> blocks -->
+      <div class="paper-card">
+        <h3>Zapped then napped? A rapidly quenched remnant leaker candidate at z=8.5</h3>
+        <p><strong>Baker et al. 2025c</strong> — A&A</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/staf475">📄 DOI</a></div>
+        <img src="images/z85_fnu.png" alt="Spectral slope of z=8.5 galaxy">
+        <details><summary>Read Abstract</summary><p>We used NIRSpec MSA spectroscopy and NIRCam photometry... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>The abundance and nature of high-redshift quiescent galaxies</h3>
+        <p><strong>Baker et al. 2025b</strong> — MNRAS</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/staf475">📄 DOI</a></div>
+        <img src="images/qgals_spec.png" alt="Spectroscopic analysis of quiescent galaxies">
+        <details><summary>Read Abstract</summary><p>We use NIRSpec/MSA spectroscopy and NIRCam imaging... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>A core in a star-forming disc as evidence of inside-out growth</h3>
+        <p><strong>Baker et al. 2025a</strong> — Nature Astronomy</p>
+        <div class="paper-links"><a href="https://doi.org/10.1038/s41550-024-02384-8">📄 DOI</a></div>
+        <img src="images/NatAstroFig.png" alt="Core in disc galaxy structure">
+        <details><summary>Read Abstract</summary><p>The physical processes that establish morphological evolution... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>Different regulation of stellar metallicities between SF and quiescent galaxies</h3>
+        <p><strong>Baker et al. 2024a</strong> — MNRAS</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/stae2059">📄 DOI</a></div>
+        <img src="images/stae2059fig1.jpeg" alt="Metallicity relations figure">
+        <details><summary>Read Abstract</summary><p>One of the most important questions in astrophysics is what causes galaxies to stop forming stars... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>Stellar mass drives the mass–metallicity relationship</h3>
+        <p><strong>Baker & Maiolino 2023</strong> — MNRAS</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/stad802">📄 DOI</a></div>
+        <img src="images/stad802fig1.jpeg" alt="Mass–metallicity relationship plot">
+        <details><summary>Read Abstract</summary><p>The widely known relation between stellar mass and gas metallicity... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>The metallicity’s fundamental dependence on local and global galactic quantities</h3>
+        <p><strong>Baker et al. 2023b</strong> — MNRAS</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/stac3594">📄 DOI</a></div>
+        <img src="images/Baker2023b.png" alt="Resolved metallicity scaling relations">
+        <details><summary>Read Abstract</summary><p>We study the scaling relations between gas-phase metallicity, Σ*, ΣSFR, and ΣH2... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>The molecular gas main sequence and Schmidt–Kennicutt relation</h3>
+        <p><strong>Baker et al. 2023a</strong> — MNRAS</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/stac3413">📄 DOI</a></div>
+        <img src="images/Baker2023a.png" alt="Gas scaling relations">
+        <details><summary>Read Abstract</summary><p>In galaxy evolution the relationship between stellar mass and SFR is known as the SFMS... [full abstract]</p></details>
+      </div>
+
+      <div class="paper-card">
+        <h3>The ALMaQUEST survey IX: the resolved star-forming main sequence</h3>
+        <p><strong>Baker et al. 2022</strong> — MNRAS</p>
+        <div class="paper-links"><a href="https://doi.org/10.1093/mnras/stab3672">📄 DOI</a></div>
+        <img src="images/Baker2022a.png" alt="Resolved star-forming main sequence">
+        <details><summary>Read Abstract</summary><p>We investigate the nature of the scaling relations between ΣSFR, Σ*, and ΣH2... [full abstract]</p></details>
+      </div>
     </div>
   </div>
 
@@ -148,3 +203,4 @@
 
 </body>
 </html>
+
