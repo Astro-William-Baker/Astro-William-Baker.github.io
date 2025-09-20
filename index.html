@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>William M. Baker | Astrophysicist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #234a7d;
+      --secondary: #f4f7fa;
+      --text: #333;
+      --link: #0066cc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; color: var(--text); background: white; line-height: 1.6; }
+    h1,h2,h3 { font-family: 'Montserrat', sans-serif; margin-bottom: .5em; }
+
+    /* Header */
+    .header {
+      background: linear-gradient(120deg, #234a7d, #4f77a8);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .header h1 { font-size: 2.5rem; margin-bottom: .3em; }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .navbar a {
+      color: white; padding: 14px 20px; text-decoration: none; font-weight: 500;
+    }
+    .navbar a:hover { background: #555; }
+
+    /* Layout */
+    .container { display: flex; max-width: 1200px; margin: auto; padding: 20px; gap: 20px; }
+    .side { flex: 1; background: var(--secondary); padding: 20px; border-radius: 8px; }
+    .main { flex: 3; }
+
+    /* Sidebar */
+    .side img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
+    .side h2 { margin-top: 0; }
+    .tags span {
+      display: inline-block; background: #234a7d; color: white; padding: 4px 8px;
+      margin: 3px; border-radius: 12px; font-size: 0.85rem;
+    }
+    .cv-btn {
+      display: inline-block; background: var(--primary); color: white;
+      padding: 10px 15px; margin-top: 10px; border-radius: 5px;
+      text-decoration: none; font-weight: 600;
+    }
+    .cv-btn:hover { background: #1b3b65; }
+
+    /* Papers */
+    .paper-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      background: #fafafa;
+    }
+    .paper-card img {
+      max-width: 100%; height: auto; margin: 15px 0; border-radius: 4px;
+    }
+    .paper-links a {
+      margin-right: 15px; text-decoration: none; color: var(--link); font-weight: 500;
+    }
+    details summary {
+      cursor: pointer; font-weight: 600; margin-top: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) { .container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>William M. Baker</h1>
+    <p>Observational Astrophysicist | Galaxy Evolution & High-Redshift Galaxies</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="CV_Baker.pdf">CV</a>
+    <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-0215-1104">ADS</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="side" id="about">
+      <h2>About Me</h2>
+      <img src="images/Profile_picture.jpeg" alt="William M. Baker portrait">
+      <p>Research Fellow (Postdoctoral) at DARK, Niels Bohr Institute, Copenhagen.<br>
+      Former PhD student & postdoc at University of Cambridge.</p>
+
+      <h3>Research Interests</h3>
+      <div class="tags">
+        <span>Galaxy Evolution</span><span>High-z</span><span>Quenching</span>
+        <span>Quiescent Galaxies</span><span>Morphology</span><span>Metallicities</span>
+        <span>Scaling Relations</span><span>Photometry</span><span>Spectroscopy</span>
+      </div>
+
+      <a class="cv-btn" href="CV_Baker.pdf">Download CV</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main" id="publications">
+      <h2>Selected Publications</h2>
+
+      <!-- Example paper card -->
+      <div class="paper-card">
+        <h3>Exploring over 700 massive quiescent galaxies at z = 2–7</h3>
+        <p><strong>Baker et al. 2025d</strong> — Submitted to A&A</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1093/mnras/staf475">📄 DOI</a>
+        </div>
+        <img src="images/SMFs_mqg.png" alt="Stellar mass function of quiescent galaxies">
+        <details>
+          <summary>Read Abstract</summary>
+          <p>High-redshift (z>2) massive quiescent galaxies are crucial tests... [full abstract here]</p>
+        </details>
+      </div>
+
+      <!-- Repeat .paper-card for each paper -->
+      <!-- You can paste all your abstracts inside <details> blocks -->
+    </div>
+  </div>
+
+  <div class="footer" id="contact">
+    <p>© 2025 William M. Baker — <a href="mailto:will.baker@astro.example">Contact</a> | <a href="https://orcid.org/0000-0003-0215-1104">ORCID</a> | <a href="https://github.com/yourgithub">GitHub</a></p>
+  </div>
+
+</body>
+</html>
